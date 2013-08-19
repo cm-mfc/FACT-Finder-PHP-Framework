@@ -50,7 +50,8 @@ class FACTFinder_Default_TrackingAdapter extends FACTFinder_Abstract_Adapter
 
         $params = array('sourceRefKey' => $sourceRefKey, 'sid' => $sid);
 
-        $optParams = array('userId', 'cookieId', 'price', 'amount', 'positive', 'message', 'site', 'id', 'mid');
+        $optParams = array('userId', 'cookieId', 'price', 'amount', 'positive', 'message',
+            'site', 'id', 'mid', 'uid');
         foreach ($optParams AS $optParam) {
             if (isset($inputParams[$optParam]) && strlen($inputParams[$optParam]) > 0)
                 $params[$optParam] = $inputParams[$optParam];
